@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <title>Frontend Mentor | Multi-step form</title>
+
+</head>
+<body>
+    
+    <div class="main">
+        <div class="container">                                                                                                                                                                                                             
+            <div class="step-1">
+
+                <!-- 1st section -->
+                <div class="image">
+                    <div class="main-sidebar">
+                        <div class="sidebar-1">
+                            <div class="num-1">
+                                <b>1</b>
+                            </div>
+                            <div class="sidebar-flex-1">
+                                <span class="step-num">STEP 1</span><br>
+                                <span class="step-title">YOUR INFO</span>
+                            </div>
+                        </div>
+                        <div class="sidebar-2">
+                            <div class="num-2">
+                                <b>2</b>
+                            </div>
+                            <div class="sidebar-flex-1">
+                                <span class="step-num">STEP 2</span><br>
+                                <span class="step-title">SELECT PlAN</span>
+                            </div>
+                        </div>
+                        <div class="sidebar-2">
+                            <div class="num-2">
+                                <b>3</b>
+                            </div>
+                            <div class="sidebar-flex-1">
+                                <span class="step-num">STEP 3</span><br>
+                                <span class="step-title">YOUR INFO</span>
+                            </div>
+                        </div>
+                        <div class="sidebar-2">
+                            <div class="num-2">
+                                <b>4</b>
+                            </div>
+                            <div class="sidebar-flex-1">
+                                <span class="step-num">STEP 4</span><br>
+                                <span class="step-title">SUMMARY</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2nd section -->
+                <div>
+                    <div class="personal-info tab">
+                        <div class="">
+                            <h1 class="personal-info-h1">Personal info</h1>
+                            <p class="personal-info-p">Please provide your name, email address, and phone number.</p>
+                        </div>
+                        <div class="personal-info-form">
+                            <form>
+                                <div class="flex">
+                                    <label class="input-label">Name</label>
+                                    <label class="input-error">This field is required</label>
+                                </div>
+                                <input class="input" type="text">
+                                <div class="flex">
+                                    <label class="input-label">Email Address</label>
+                                    <label class="input-error">This field is required</label>
+                                </div>
+                                <input class="input" type="email">
+                                <div class="flex">
+                                    <label class="input-label">Phone Number</label>
+                                    <label class="input-error">This field is required</label>
+                                </div>
+                                <input class="input" type="number" placeholder="e.g. +1 234 567 890">
+                            </form>
+                        </div>
+                        <div class="next-btn">
+                            <button>Next Step</button>
+                        </div>
+                    </div>
+
+                    <div class="personal-info tab">
+                        <div class="">
+                            <h1 class="personal-info-h1">Select your plan</h1>
+                            <p class="personal-info-p">You have the option of monthly or yearly billing.</p>
+                        </div>
+                        <div class="personal-info-form">
+                            <div class="cards">
+                                <div class="card-1">
+                                    <div class="logo">
+                                        <img src="./assets/images/icon-arcade.svg" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        <span class="card-info-title">Arcade</span><br>
+                                        <span class="card-info-m">$9/mo</span><br>
+                                        <span class="card-info-y">2 months free</span>
+                                    </div>
+                                </div>
+                                <div class="card-1">
+                                    <div class="logo">
+                                        <img src="./assets/images/icon-advanced.svg" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        <span class="card-info-title">Advanced</span><br>
+                                        <span class="card-info-m">$9/mo</span><br>
+                                        <span class="card-info-y">2 months free</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-1">
+                                    <div class="logo">
+                                        <img src="./assets/images/icon-pro.svg" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        <span class="card-info-title">Pro</span><br>
+                                        <span class="card-info-m">$9/mo</span><br>
+                                        <span class="card-info-y">2 months free</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="month-year-btn">
+                            <div>
+                                <span>Monthly</span>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <span>Yearly</span>
+                            </div>
+                        </div>
+
+
+                        <div class="next-btn-2">
+                            <button class="back-btn">Go back</button>
+                            <button>Next Step</button>
+                        </div>
+                    </div>
+
+                    <div class="personal-info tab">
+                        <div class="">
+                            <h1 class="personal-info-h1">Pick add-ons</h1>
+                            <p class="personal-info-p">Add-ons help enhance your gaming experience.</p>
+                        </div>
+                        <div class="personal-info-form">
+                           <div class="add-ons">
+                                <!-- 1st row -->
+                                <div class="online-services">
+                                    <div class="addons-checkbox">
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="addons-info">
+                                        <span class="addons-info-title">Online service</span><br>
+                                        <span class="addons-info-dec">Access to multiplayer games</span>
+                                    </div>
+                                    <div class="addons-amount">
+                                        <p>+$1/mo</p>
+                                    </div>
+                                </div>
+
+                                <!-- 2nd row -->
+                                <div class="online-services">
+                                    <div class="addons-checkbox">
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="addons-info">
+                                        <span class="addons-info-title">Large Storage</span><br>
+                                        <span class="addons-info-dec">Extra 1TB of cloud save</span>
+                                    </div>
+                                    <div class="addons-amount">
+                                        <p>+$2/mo</p>
+                                    </div>
+                                </div>
+
+                                <!-- 3rd row -->
+                                <div class="online-services">
+                                    <div class="addons-checkbox">
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="addons-info">
+                                        <span class="addons-info-title">Customizable Profile</span><br>
+                                        <span class="addons-info-dec">Custom theme on your profile</span>
+                                    </div>
+                                    <div class="addons-amount">
+                                        <p>+$2/mo</p>
+                                    </div>
+                                </div>
+
+                           </div>
+                        </div>
+
+                        <!-- <div class="month-year-btn">
+                            <div>
+                                <span>Monthly</span>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <span>Yearly</span>
+                            </div>
+                        </div> -->
+
+
+                        <div class="next-btn-2">
+                            <button class="back-btn">Go back</button>
+                            <button>Next Step</button>
+                        </div>
+                    </div>
+
+                    <!-- TODO: -->
+                    <!-- <div class="personal-info tab">
+                        <div class="">
+                            <h1 class="personal-info-h1">Finishing up</h1>
+                            <p class="personal-info-p">Double-check everything looks OK before confirming.</p>
+                        </div>
+                        <div class="personal-info-form">
+                           <div class="final-section">
+                                <div class="">
+                                    <div>
+
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+
+                        <div class="next-btn-2">
+                            <button class="back-btn">Go back</button>
+                            <button>Next Step</button>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

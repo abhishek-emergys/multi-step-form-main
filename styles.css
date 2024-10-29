@@ -1,0 +1,373 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(217, 100%, 97%);
+    font-family: "Ubuntu";
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* Main */
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+  
+.container {
+    width: 70vw;
+    height: 80vh;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+/* Sidebar */
+
+.step-1 {
+    display: flex;
+    padding: 10px 10px;
+}
+
+.image {
+    height: 76vh;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-image: url('./assets/images/bg-sidebar-desktop.svg');
+}
+
+.num-1, .num-2 {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: hsl(206, 94%, 87%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.num-2 {
+    color: white;
+    background-color: #483EFF;
+    border: 1px solid white ;
+}
+
+.step-num {
+    font-size: 12px;
+    font-weight: 500;
+    color: hsl(229, 24%, 87%);
+}
+
+.sidebar-1, .sidebar-2 {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.sidebar-flex-1 {
+    padding: 0px 20px;
+    color: white;
+}
+
+.sidebar-flex-2 {
+    padding: 0px 20px;
+    border: 1px solid white;
+    color: white;
+}
+
+.step-title {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.main-sidebar {
+    padding: 20px 10px;
+}
+
+/* Step 1 */
+
+.personal-info {
+    padding: 20px 110px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .personal-info-form {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    text-align: center;
+    background-color: hsl(243, 100%, 62%);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    width: 8vw;
+    font-size: 16px;
+    font-weight: 500;
+    height: 6vh;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: hsl(213, 96%, 18%)
+  }
+
+  .personal-info-form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .personal-info-p {
+    color: hsl(231, 11%, 63%);
+  }
+
+  .personal-info-h1{
+    color: hsl(213, 96%, 18%);
+  }
+
+  .next-btn {
+    padding: 40px 0px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+.next-btn-2 {
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-btn {
+    color: hsl(231, 11%, 63%);
+    background-color: #FFFFFF;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.back-btn:hover {
+    background-color: #ccc;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .input-error {
+    color: red;
+    font-weight: 400;
+  }
+
+  .input-label, .input-error {
+    margin-top: 10px;
+  }
+
+  .tab {
+    display: none;
+  }
+
+
+  /* Step 2 */
+
+.cards {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-1 {
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    height: 24vh;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid hsl(229, 24%, 87%);
+}
+
+.card-1:hover {
+    border: 1px solid hsl(213, 96%, 18%);
+    background-color: hsl(217, 100%, 97%)
+}
+
+.logo {
+    padding: 20px 14px;
+}
+
+.card-info {
+    margin: 10px;
+}
+
+.card-info-title {
+    font-weight: 500;
+    color: hsl(213, 96%, 18%);
+}
+
+.card-info-m {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(231, 11%, 63%);
+}
+
+.card-info-y {
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(213, 96%, 18%);
+}
+
+.month-year-btn {
+    display: flex;
+    justify-content: center;
+    width: 33vw;
+    height: 8vh;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: hsl(217, 100%, 97%);
+}
+
+/* Toggle */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 26px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+ 
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #02295A;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #02295A;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #02295A;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  /* Step 3 */
+
+.add-ons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+.online-services {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0px 20px;
+    align-items: center;
+    width: 33vw;
+    height: 10vh;
+    border-radius: 10px;
+    background-color: hsl(217, 100%, 97%);
+    cursor: pointer;
+    /* border-color: #483EFF; */
+    border: 1px solid hsl(213, 96%, 18%);
+}
+
+.addons-info {
+    width: 80%;
+    font-size: medium;
+    font-weight: 700;
+}
+
+.addons-info-title {
+    font-size: medium;
+    font-weight: 700;
+}
+
+.addons-info-dec {
+    font-size: small;
+    font-weight: 700;
+    color: hsl(231, 11%, 63%);
+}
+
+.addons-amount {
+    font-size: small;
+    font-weight: 400;
+    color: hsl(243, 100%, 62%);
+}
+
+
+/* Step 4 */
+
+/* .final-section {
+    width: 32vw;
+    height: 30vh;
+    border-radius: 10px;
+    background-color: hsl(217, 100%, 97%);
+} */
