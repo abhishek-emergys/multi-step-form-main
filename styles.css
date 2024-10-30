@@ -11,7 +11,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-
 /* Main */
 
 .main {
@@ -37,6 +36,7 @@ input::-webkit-inner-spin-button {
 }
 
 .image {
+    object-fit: fill;
     height: 76vh;
     border-radius: 10px;
     background-repeat: no-repeat;
@@ -84,7 +84,7 @@ input::-webkit-inner-spin-button {
 }
 
 .step-title {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
 }
 
@@ -92,10 +92,19 @@ input::-webkit-inner-spin-button {
     padding: 20px 10px;
 }
 
+/*  */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+
+/*  */
 /* Step 1 */
 
 .personal-info {
-    padding: 20px 110px;
+    padding: 20px 90px;
+    height: 60vh;
+    width: 36vw;
 }
 
 .input {
@@ -145,19 +154,12 @@ input::-webkit-inner-spin-button {
     color: hsl(213, 96%, 18%);
   }
 
-  .next-btn {
-    padding: 40px 0px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-  }
-
-.next-btn-2 {
-    padding: 40px 0px;
+  .btn {
+    padding: 10px 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+  }
 
 .back-btn {
     color: hsl(231, 11%, 63%);
@@ -178,6 +180,7 @@ input::-webkit-inner-spin-button {
   .input-error {
     color: red;
     font-weight: 400;
+    display: none;
   }
 
   .input-label, .input-error {
@@ -193,7 +196,7 @@ input::-webkit-inner-spin-button {
 
 .cards {
     display: flex;
-    gap: 16px;
+    gap: 18px;
     align-items: center;
 }
 
@@ -205,7 +208,7 @@ input::-webkit-inner-spin-button {
 .card-1 {
     display: flex;
     flex-direction: column;
-    width: 10vw;
+    width: 12vw;
     height: 24vh;
     border-radius: 10px;
     cursor: pointer;
@@ -245,7 +248,7 @@ input::-webkit-inner-spin-button {
 .month-year-btn {
     display: flex;
     justify-content: center;
-    width: 33vw;
+    width: 36vw;
     height: 8vh;
     align-items: center;
     gap: 20px;
@@ -335,7 +338,6 @@ input::-webkit-inner-spin-button {
     border-radius: 10px;
     background-color: hsl(217, 100%, 97%);
     cursor: pointer;
-    /* border-color: #483EFF; */
     border: 1px solid hsl(213, 96%, 18%);
 }
 
@@ -365,9 +367,74 @@ input::-webkit-inner-spin-button {
 
 /* Step 4 */
 
-/* .final-section {
-    width: 32vw;
-    height: 30vh;
+.final-section {
+    width: 36vw;
+    height: 24vh;
     border-radius: 10px;
     background-color: hsl(217, 100%, 97%);
-} */
+}
+
+.change-tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.change-tab-title, .change-tab-price {
+    font-weight: 700;
+}
+
+.change-tab-price {
+    margin-left: 100px;
+}
+
+.service, .total {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: medium;
+    font-weight: 400;
+    color: hsl(231, 11%, 63%);
+}
+
+.service-price {
+    color: black;
+}
+
+.total {
+    padding-top: 40px;
+}
+
+.total-price {
+    font-size: larger;
+    font-weight: 700;
+    color: hsl(243, 100%, 62%)
+}
+
+/* Thank you page*/
+
+.thank-you {
+    width: 36vw;
+    height: 70vh;
+}
+
+.thank-you-img img{
+    display: flex;
+    padding-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 16%;
+}
+
+.thank-you-msg {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: hsl(231, 11%, 63%);
+    font-weight: 400;
+}
+
+.thank-you-msg h1 {
+    color: hsl(213, 96%, 18%);
+}
