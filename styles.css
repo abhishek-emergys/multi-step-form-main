@@ -11,6 +11,13 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+::placeholder {
+  font-family: "Ubuntu";
+  color: hsl(231, 11%, 63%);
+  font-size: 14px;
+  font-weight: 500;
+}
+
 /* Main */
 
 .main {
@@ -52,11 +59,12 @@ input::-webkit-inner-spin-button {
     align-items: center;
     justify-content: center;
     border: 1px solid white;
-    color: white;
+    color: hsl(213, 96%, 18%);
 }
 
 .num-2 {
     background-color: #483EFF;
+    color: white;
 }
 
 .step-num {
@@ -122,7 +130,7 @@ input.invalid {
 
   button {
     text-align: center;
-    background-color: hsl(243, 100%, 62%);
+    background-color: hsl(213, 96%, 18%);
     color: #FFFFFF;
     border: none;
     border-radius: 5px;
@@ -134,7 +142,15 @@ input.invalid {
   }
 
   button:hover {
-    background-color: hsl(213, 96%, 18%)
+    background-color: hsl(243, 100%, 62%)
+  }
+
+  .confirm-btn {
+    background-color: hsl(243, 100%, 62%)
+  }
+
+  .confirm-btn:hover {
+    background-color: hsl(213, 96%, 18%);
   }
 
   .personal-info-form button {
@@ -175,9 +191,10 @@ input.invalid {
   }
 
   .input-error {
-    color: red;
-    font-weight: 400;
+    color: hsl(354, 84%, 57%);
+    font-weight: 500;
     display: none;
+    font-size: 1rem;
   }
 
   .input-label, .input-error {
@@ -213,7 +230,7 @@ input.invalid {
 
 .card-1:hover {
     border: 1px solid hsl(213, 96%, 18%);
-    background-color: hsl(217, 100%, 97%)
+    /* background-color: hsl(217, 100%, 97%) */
 }
 
 .card-clicked {
@@ -337,9 +354,17 @@ input.invalid {
     width: 33vw;
     height: 10vh;
     border-radius: 10px;
-    background-color: hsl(217, 100%, 97%);
-    cursor: pointer;
-    border: 1px solid hsl(213, 96%, 18%);
+    border: 1px solid hsl(231, 11%, 63%);
+}
+
+.online-services:hover {
+  background-color: hsl(217, 100%, 97%); 
+  border: 1px solid hsl(228, 100%, 84%) 
+}
+
+.online-services.selected {
+  background-color: hsl(217, 100%, 97%); 
+  border: 1px solid hsl(228, 100%, 84%) 
 }
 
 .addons-info {
@@ -369,7 +394,7 @@ input.invalid {
 
 .final-section {
     width: 36vw;
-    height: 24vh;
+    height: 30vh;
     border-radius: 10px;
     background-color: hsl(217, 100%, 97%);
 }
@@ -379,6 +404,17 @@ input.invalid {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
+}
+
+.change-tab-link {
+  text-decoration: underline;
+  color: hsl(231, 11%, 63%)
+}
+
+.change-tab-link:hover {
+  font-weight: 400;
+  cursor: pointer;
+  color: hsl(243, 100%, 62%);
 }
 
 .change-tab-title, .change-tab-price {
@@ -415,16 +451,16 @@ input.invalid {
 /* Thank you page*/
 
 .thank-you {
-    width: 36vw;
+    width: 50vw;
     height: 70vh;
 }
 
 .thank-you-img img{
     display: flex;
-    padding-top: 150px;
+    padding-top: 120px;
     margin-right: auto;
     margin-left: auto;
-    width: 16%;
+    width: 14%;
 }
 
 .thank-you-msg {
@@ -435,42 +471,199 @@ input.invalid {
     font-weight: 400;
 }
 
+.thank-you-msg span {
+  padding: 0px 100px;
+}
+
 .thank-you-msg h1 {
     color: hsl(213, 96%, 18%);
 }
 
-@media (max-width: 380px) {
-  .main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-} 
+@media (max-width: 425px) {
+  .image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./assets/images/bg-sidebar-mobile.svg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 160px;
+    border-radius: 0px;
+    z-index: -1;
+  }
 
-.step-1 {
-  display: flex;
-  flex-direction: column;
-}
+  .main-sidebar {
+    display: flex;
+    justify-content: center;
+  }
 
 .sidebar-flex-1 {
-  display: none;
-}
-
-.main-sidebar {
-  display: flex;
-  justify-content:center;
-  gap: 10px;
-}
-
-.sidebar-1, .sidebar-2 {
-  padding: 0px;
+    display: none;
 }
 
 .container {
+  width: 86vw;
+  height: 74vh;
+}
+
+.personal-info {
+  padding: 10px;
+  width: 70vw;
+}
+
+.btn {
+  margin-top: 70px;
+  padding: 0px;
+}
+
+.back-btn {
+  width: 100px;
+}
+
+#next-btn {
+  width: 100px;
+}
+
+.cards {
+  flex-direction: column;
+}
+
+.card-1 {
+  width: 70vw;
+  height: 3.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-info {
+  flex-direction: column;
+}
+
+.personal-info-p {
+  font-size: 1rem;
+}
+
+.personal-info-h1 {
+  font-size: 24px;
+}
+
+.month-year-btn {
+  width: 70vw;
+  margin-bottom: 10px;
+}
+
+.card-info-title {
+  font-size: 14px;
+}
+
+.card-info-m {
+  font-size: 12px;
+}
+
+.card-info-y {
+  font-size: 10px;
+}
+
+.online-services {
+  display: flex;
+  width: 58vw;
+}
+
+.addons-info-title {
+  font-size: 14px;
+}
+
+.addons-checkbox {
+  width: 10vw;
+}
+
+.addons-info {
+  flex-direction: column;
+  width: 80vw;
+}
+
+.addons-amount {
+  width: 10vw;
+}
+
+.final-section {
+  width: 70vw;
+}
+
+.change-tab {
+  display: flex;
+}
+
+.service, .change-tab, .total {
+  font-size: 12px;
+}
+
+.thank-you-img img {
+  padding: 0%;
+}
+
+.thank-you-info {
   width: 100vw;
-  height: 30vh;
-  background-color: #FFFFFF;
+  justify-content: center;
+}
+
+.thank-you-msg {
+  width: 80vw;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.thank-you-img {
+  width: 62vw;
+  /* padding: 20px; */
+  margin-left: 20px;
+  margin-bottom: 0px;
+  margin-top: 62px;
+}
+
+.thank-you-img img {
+  width: 20vw;
+  margin-left: 90px;
+}
+
+.thank-you {
+  justify-content: center;
+}
+
+.add-ons {
+  gap: 8px;
+}
+
+.addons-info {
+  padding: 20px 5px;
+}
+
+.online-services {
+  gap: 0px;
+  width: 62vw;
+}
+
+.addons-info-title {
+  font-size: 14px;
+}
+
+.addons-info-dec {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.online-services{
+  height: 12vh;
+}
+
+.thank-you-msg span {
+  width: 80vw;
 }
 
 }

@@ -63,12 +63,12 @@
                 <!-- 2nd section -->
                 <div id="form">
                     <div class="personal-info tab">
-                        <div class="">
+                        <div class="personal-info-main">
                             <h1 class="personal-info-h1">Personal info</h1>
                             <p class="personal-info-p">Please provide your name, email address, and phone number.</p>
                         </div>
                         <div class="personal-info-form">
-                            <form class="user-info">
+                            <form class="user-info" id="user-info">
                                 <div class="flex">
                                     <label class="input-label">Name</label>
                                     <label class="input-error" id="name-error">This field is required</label>
@@ -91,8 +91,8 @@
                         </div>
                     </div>
 
-                    <div class="personal-info tab">
-                        <div class="">
+                    <div class="personal-info tab" id="main-plan">
+                        <div class="personal-info-main">
                             <h1 class="personal-info-h1">Select your plan</h1>
                             <p class="personal-info-p">You have the option of monthly or yearly billing.</p>
                         </div>
@@ -138,7 +138,7 @@
                             </div>
                             <div>
                                 <label class="switch">
-                                    <input type="checkbox" onchange="toggleBilling()">
+                                    <input type="checkbox" id="checkbox" onchange="toggleBilling()">
                                     <span class="slider round"></span>
                                 </label>
                             </div>
@@ -149,14 +149,14 @@
                     </div>
 
                     <div class="personal-info tab">
-                        <div class="">
+                        <div class="personal-info-main">
                             <h1 class="personal-info-h1">Pick add-ons</h1>
                             <p class="personal-info-p">Add-ons help enhance your gaming experience.</p>
                         </div>
                         <div class="personal-info-form">
                             <div class="add-ons">
                                 <!-- 1st row -->
-                                <div class="online-services">
+                                <div class="online-services" id="online-services">
                                     <div class="addons-checkbox">
                                         <input type="checkbox" value="online-service" id="addon-online-service"
                                             onchange="updateAddons(event)">
@@ -205,7 +205,7 @@
                     </div>
 
                     <div class="personal-info tab">
-                        <div class="">
+                        <div class="personal-info-main">
                             <h1 class="personal-info-h1">Finishing up</h1>
                             <p class="personal-info-p">Double-check everything looks OK before confirming.</p>
                         </div>
@@ -215,7 +215,7 @@
                                     <!-- change -->
                                     <div>
                                         <span class="change-tab-title" id="change-tab-title">Arcade (Monthly)</span><br>
-                                        <a href="/" class="change-tab-link">Change</a>
+                                        <a onclick="nextPrev(-2)" class="change-tab-link">Change</a>
                                     </div>
                                     <div>
                                         <!-- <p class="change-tab-price">$9/mo</p> -->
@@ -228,18 +228,18 @@
                                 </div>
 
                                 <div class="service" id="online-service">
-                                    <span class="service-title">Online service</span>
-                                    <span class="service-price" id="service-price-1">+$1/mo</span>
+                                    <span class="service-title" id="service-title-1"> </span>
+                                    <span class="service-price" id="service-price-1"> </span>
                                 </div>
 
                                 <div class="service" id="large-service">
-                                    <span class="service-title">Larger storage</span>
-                                    <span class="service-price" id="service-price-2">+$2/mo</span>
+                                    <span class="service-title" id="service-title-2"> </span>
+                                    <span class="service-price" id="service-price-2"> </span>
                                 </div>
 
                                 <div class="service" id="custom-service">
-                                    <span class="service-title">Custom storage</span>
-                                    <span class="service-price" id="service-price-3">+$2/mo</span>
+                                    <span class="service-title" id="service-title-3"> </span>
+                                    <span class="service-price" id="service-price-3"> </span>
                                 </div>
 
                             </div>
@@ -256,7 +256,7 @@
                         <button onclick="nextPrev(1)" id="next-btn">Next Step</button>
                     </div>
 
-                    <div class="personal-info tab">
+                    <div class="thank-you-info tab">
                         <div class="thank-you">
                             <div class="thank-you-img">
                                 <img src="./assets/images/icon-thank-you.svg">
